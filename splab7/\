@@ -1,0 +1,14 @@
+#!/bin/bash
+function policz
+{
+N=$[RANDOM%(10-5)+5]
+echo $N
+s=1
+while [ $N -ge 1 ];
+do
+s=$[$s * $N]
+N=$[$N - 1]
+done
+echo "$1! = $s"
+exit 1
+}
